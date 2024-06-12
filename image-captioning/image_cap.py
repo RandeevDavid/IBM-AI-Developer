@@ -20,5 +20,6 @@ outputs = model.generate(**inputs, max_length=200)
 
 # Decode the generated tokens to text
 caption = processor.decode(outputs[0], skip_special_tokens=True)
+
 # Print the caption
 print(caption)
