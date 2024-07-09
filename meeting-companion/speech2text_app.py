@@ -10,8 +10,10 @@ def transcript_audio(audio_file):
         model="openai/whisper-tiny.en",
         chunk_length_s=30,
     )
+    
     # Transcribe the audio file and return the result
     result = pipe(audio_file, batch_size=8)["text"]
+    
     return result
 
 # Set up Gradio interface
