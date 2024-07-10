@@ -90,7 +90,7 @@ def process_document(document_path):
         llm=llm_hub,
         chain_type="stuff",
         retriever= db.as_retriever(search_type="mmr", search_kwargs={'k': 6, 'lambda_mult': 0.25}),
-        return_source_documents=False
+        return_source_documents=False,
         input_key = "question"
         # chain_type_kwargs={"prompt": prompt} # if you are using prompt template, you need to uncomment this part
     
