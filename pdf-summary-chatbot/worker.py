@@ -105,7 +105,6 @@ def process_prompt(prompt):
 
     # Pass the prompt and the chat history to the conversation_retrieval_chain object
     output = conversation_retrieval_chain({"question": prompt, "chat_history": chat_history})
-    
     answer =  output["result"]
     
     # Update the chat history
@@ -113,7 +112,7 @@ def process_prompt(prompt):
     chat_history.append((prompt, answer))	
     
     # Return the model's response
-    return result['answer']
+    return answer
     
 
 # Initialize the language model
