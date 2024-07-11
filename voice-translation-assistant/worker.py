@@ -6,11 +6,11 @@ import requests
 
 # Placeholder for Watsonx_API and Project_id incase you need to use the code outside this environment
 Watsonx_API = "Your WatsonX API"
-Project_id= "skills-network" # For using in the skills network environmemnt
+Project_id = "Your Project ID"
 
 # Define the credentials 
 credentials = {
-    "url": "https://us-south.ml.cloud.ibm.com"
+    "url": "https://us-south.ml.cloud.ibm.com",
     #"apikey": 'API_KEY'
 }
 
@@ -87,7 +87,7 @@ def text_to_speech(text, voice=""):
     # Send a HTTP Post reqeust to Watson Text-to-Speech Service
     response = requests.post(api_url, headers=headers, json=json_data)
     print('Text-to-Speech response:', response)
-    
+
     return response.content
 
 

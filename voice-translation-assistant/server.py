@@ -46,7 +46,7 @@ def process_message_route():
     print('user_message', user_message)
 
     # Get users preferred voice from their request
-    voice = request.json['voice'] t
+    voice = request.json['voice']
     print('voice', voice)
 
     # Call watsonx_process_message function to process the user's message and get a response back
@@ -69,7 +69,7 @@ def process_message_route():
     )
 
     print(response)
-    
+
     return response
 
 
