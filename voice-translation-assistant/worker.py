@@ -10,7 +10,7 @@ Project_id = "Your Project ID"
 
 # Define the credentials 
 credentials = {
-    "url": "https://us-south.ml.cloud.ibm.com",
+    "url": "https://us-south.ml.cloud.ibm.com"
     #"apikey": 'API_KEY'
 }
 
